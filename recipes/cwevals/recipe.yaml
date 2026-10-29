@@ -6,8 +6,11 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/c/cwevals/cwevals-${{ version }}.tar.gz
-  sha256: 2ae997369ff44941925e4db1bd07eb4e13c05de412e615636fd12881d63f8a13
+  - url: https://pypi.org/packages/source/c/cwevals/cwevals-${{ version }}.tar.gz
+    sha256: 2ae997369ff44941925e4db1bd07eb4e13c05de412e615636fd12881d63f8a13
+  - url: https://raw.githubusercontent.com/Rapptz/RoboDanny/1cb350899b1aaab7f6445d0180f9f878b02d0a33/LICENSE.txt
+    sha256: 1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5
+    file_name: LICENSE-RoboDanny.txt
 
 build:
   noarch: python
@@ -44,6 +47,7 @@ about:
   license_file:
     - LICENSE
     - THIRD_PARTY_LICENSES.txt
+    - LICENSE-RoboDanny.txt
   homepage: https://pypi.org/project/cwevals/
 
 extra:
