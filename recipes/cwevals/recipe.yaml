@@ -40,8 +40,10 @@ tests:
 
 about:
   summary: The official Python library for the CoreWeave Evaluations API
-  license: Apache-2.0
-  license_file: LICENSE
+  license: Apache-2.0 AND BSD-3-Clause AND MIT AND MPL-2.0
+  license_file:
+    - LICENSE
+    - THIRD_PARTY_LICENSES.txt
   homepage: https://pypi.org/project/cwevals/
 
 extra:
